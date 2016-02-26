@@ -13,7 +13,7 @@ public class carAttack : CarBehaviour
         float rightRaySensor = RRcast.getDistancia();
 
         //Calculate target motor values
-        m_RightWheelSpeed = leftRaySensor * leftSensor * MaxSpeed;
-        m_LeftWheelSpeed = rightRaySensor * rightSensor * MaxSpeed;
+        m_LeftWheelSpeed = (leftRaySensor + rightSensor - leftRaySensor * rightSensor) * MaxSpeed;
+        m_RightWheelSpeed = (-rightRaySensor + leftSensor - -(rightRaySensor) * leftSensor) * MaxSpeed;
     }
 }
