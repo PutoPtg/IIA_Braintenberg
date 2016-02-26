@@ -9,9 +9,12 @@ public class CarBehaviour : MonoBehaviour {
 	public LightDetectorScript LeftLD;
 	public LightDetectorScript RightLD;
 
+    public Raycast RRcast;
+    public Raycast LRcast;
+
 	private Rigidbody m_Rigidbody;
-	protected float m_LeftWheelSpeed;
-	protected float m_RightWheelSpeed;
+	public float m_LeftWheelSpeed;
+	public float m_RightWheelSpeed;
 	private float m_axleLength;
 
 	void Start()
