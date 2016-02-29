@@ -16,7 +16,7 @@ public class LightDetectorScript : MonoBehaviour {
 	}
 
 	void Update () {
-		GameObject[] lights = GetAllLights ();
+		GameObject[] lights = GetVisibleLights();
 
 		output = 0;
 		numObjects = lights.Length;

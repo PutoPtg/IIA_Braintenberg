@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\CarBehaviour.cs" />
      <Compile Include="Assets\Scripts\CarBehaviour2a.cs" />
      <Compile Include="Assets\Scripts\LightDetectorScript.cs" />
+     <Compile Include="Assets\Scripts\Raycast.cs" />
      <Compile Include="Assets\Scripts\carAttack.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
