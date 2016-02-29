@@ -19,7 +19,7 @@ public class carAttack : CarBehaviour
         //quando não detecta nada na proximidade são os sensores de luz que controlam as rodas, estando o da direita ligado ao esquerdo e vice-versa.
         //quando detecta algo na frente ignora os imputs das luzes e gira as rodas em setidos opostos (com velocidade dependente da distância ao objecto) e vira-o para a dirita
         //até não ter nada nos sensores, passando as luzes novamente a controlar as rodas.
-        m_LeftWheelSpeed = (leftRaySensor + rightSensor - leftRaySensor * rightSensor) * MaxSpeed;
-        m_RightWheelSpeed = (-rightRaySensor + leftSensor - -(rightRaySensor) * leftSensor) * MaxSpeed;
+        m_LeftWheelSpeed = (((leftRaySensor + rightRaySensor) / 2) + rightSensor - ((leftRaySensor + rightRaySensor) / 2) * rightSensor) * MaxSpeed;
+        m_RightWheelSpeed = (-((leftRaySensor + rightRaySensor) / 2) + leftSensor - -(((leftRaySensor + rightRaySensor) / 2)) * leftSensor) * MaxSpeed;
     }
 }
